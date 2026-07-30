@@ -1,5 +1,5 @@
 let currentStep = 0;
-const totalSteps = 19; // <--- Cambia este número al total de pasos que agregues en el HTML
+const totalSteps = 20; // <--- Cambia este número al total de pasos que agregues en el HTML
 const startButton = document.getElementById("startButton");
 const introSection = document.querySelector("main");
 // Función universal para cambiar de pantalla de forma suave
@@ -49,4 +49,16 @@ document.addEventListener("click", (e) => {
     if (e.target && e.target.classList.contains("next-button")) {
         changeStep(currentStep + 1);
     }
+});
+// Cambia esto por tu número real (ejemplo: 522221234567)
+const miNumero = "522217636914"; 
+
+document.getElementById('btn-si-broma').addEventListener('click', () => {
+    const mensajeSi = encodeURIComponent("¡Obvio que sí soy tu novia, menso! Me encantó la sorpresa, te amo ❤️✨");
+    window.open(`https://wa.me/${miNumero}?text=${mensajeSi}`, '_blank');
+});
+
+document.getElementById('btn-no-broma').addEventListener('click', () => {
+    const mensajeNo = encodeURIComponent("No, ya no quiero ser tu novia... Chale, borra la página 😭💔 Alexa, pon una de Peso Pluma triste.");
+    window.open(`https://wa.me/${miNumero}?text=${mensajeNo}`, '_blank');
 });
