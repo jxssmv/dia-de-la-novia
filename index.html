@@ -8,269 +8,275 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="intro">
-        <h1 class="title">
-           MI AMOR... ❤️
-        </h1>
-          <p class="subtitle">
-          Antes de empezar.
-        </p>
-        <p class="subtitle">
-            Quiero que leas esto sin prisas.
-        </p>
-        <p class="subtitle">
-            Porque aquí guardé una parte de mi corazón.
-        </p>
-        <button id="startButton">
-            ♡ Comenzar ♡
-        </button>
+
+    <main class="intro" id="paso-0">
+        <h1 class="title">MI AMOR... ❤️</h1>
+        <p class="subtitle">Antes de empezar.</p>
+        <p class="subtitle">Quiero que leas esto sin prisas.</p>
+        <p class="subtitle">Porque aquí guardé una parte de mi corazón.</p>
+        <button id="startButton"> ♡ Comenzar ♡ </button>
     </main>
-    <!-- Contenedor con más estrellitas distribuidas -->
-<div class="stars-container">
-  <!-- Zona superior -->
-  <div class="star" style="top: 10%; left: 15%; animation-delay: 0s; font-size: 12px;">✦</div>
-  <div class="star" style="top: 18%; left: 45%; animation-delay: 0.7s; font-size: 14px;">✦</div>
-  <div class="star" style="top: 12%; left: 80%; animation-delay: 0.3s; font-size: 11px;">✦</div>
-  <!-- Zona media-alta (alrededor del título) -->
-  <div class="star" style="top: 28%; left: 10%; animation-delay: 1.2s; font-size: 15px;">✦</div>
-  <div class="star" style="top: 22%; left: 88%; animation-delay: 0.5s; font-size: 13px;">✦</div>
-  <div class="star" style="top: 35%; left: 25%; animation-delay: 1.8s; font-size: 12px;">✦</div>
-  <div class="star" style="top: 32%; left: 70%; animation-delay: 0.9s; font-size: 14px;">✦</div>
-  <!-- Zona central (lados del texto principal) -->
-  <div class="star" style="top: 50%; left: 8%; animation-delay: 2.2s; font-size: 13px;">✦</div>
-  <div class="star" style="top: 48%; left: 92%; animation-delay: 1.4s; font-size: 11px;">✦</div>
-  <div class="star" style="top: 58%; left: 78%; animation-delay: 0.2s; font-size: 15px;">✦</div>
-  <!-- Zona baja (alrededor y abajo del botón) -->
-  <div class="star" style="top: 68%; left: 20%; animation-delay: 1.1s; font-size: 12px;">✦</div>
-  <div class="star" style="top: 72%; left: 60%; animation-delay: 2.5s; font-size: 14px;">✦</div>
-  <div class="star" style="top: 78%; left: 85%; animation-delay: 0.6s; font-size: 13px;">✦</div>
-  <!-- Fondo inferior -->
-  <div class="star" style="top: 88%; left: 15%; animation-delay: 1.7s; font-size: 14px;">✦</div>
-  <div class="star" style="top: 92%; left: 45%; animation-delay: 0.4s; font-size: 11px;">✦</div>
-  <div class="star" style="top: 85%; left: 72%; animation-delay: 2.0s; font-size: 12px;">✦</div>
-</div>
-  </main>
-<!-- ================= PASO 1: FOTO 1 ================= -->
-<section class="step-hidden photo-container" id="paso-1">
-    <div class="photo-wrapper">
-        <img src="assents/photos/portada.jpeg" alt="Foto 1" class="polaroid-photo">
-        <div class="photo-text"><span>El destino ya sabía qué estaríamos juntos❤️</span></div>
+
+    <!-- Contenedor de estrellitas -->
+    <div class="stars-container">
+        <div class="star" style="top: 10%; left: 15%; animation-delay: 0s; font-size: 12px;">✦</div>
+        <div class="star" style="top: 18%; left: 45%; animation-delay: 0.7s; font-size: 14px;">✦</div>
+        <div class="star" style="top: 12%; left: 80%; animation-delay: 0.3s; font-size: 11px;">✦</div>
+        <div class="star" style="top: 28%; left: 10%; animation-delay: 1.2s; font-size: 15px;">✦</div>
+        <div class="star" style="top: 22%; left: 88%; animation-delay: 0.5s; font-size: 13px;">✦</div>
+        <div class="star" style="top: 35%; left: 25%; animation-delay: 1.8s; font-size: 12px;">✦</div>
+        <div class="star" style="top: 32%; left: 70%; animation-delay: 0.9s; font-size: 14px;">✦</div>
+        <div class="star" style="top: 50%; left: 8%; animation-delay: 2.2s; font-size: 13px;">✦</div>
+        <div class="star" style="top: 48%; left: 92%; animation-delay: 1.4s; font-size: 11px;">✦</div>
+        <div class="star" style="top: 58%; left: 78%; animation-delay: 0.2s; font-size: 15px;">✦</div>
+        <div class="star" style="top: 68%; left: 20%; animation-delay: 1.1s; font-size: 12px;">✦</div>
+        <div class="star" style="top: 72%; left: 60%; animation-delay: 2.5s; font-size: 14px;">✦</div>
+        <div class="star" style="top: 78%; left: 85%; animation-delay: 0.6s; font-size: 13px;">✦</div>
+        <div class="star" style="top: 88%; left: 15%; animation-delay: 1.7s; font-size: 14px;">✦</div>
+        <div class="star" style="top: 92%; left: 45%; animation-delay: 0.4s; font-size: 11px;">✦</div>
+        <div class="star" style="top: 85%; left: 72%; animation-delay: 2.0s; font-size: 12px;">✦</div>
     </div>
-</section>
-<!-- ================= PASO 2: TEXTO 1 ================= -->
-<section class="step-hidden text-container" id="paso-2">
-    <div class="text-wrapper">
-        <h2>Parte 1</h2>
-        <p> Hoy es el Día de la Novia, pero mientras escribo esto me doy cuenta de algo bien curioso... si existiera un día para agradecerle a la vida por la persona que puso en mi camino, también sería hoy.<br><br>
-Porque hablar de ti nunca se me hace difícil, lo difícil es encontrar palabras que le hagan justicia a todo lo que significas para mí.<br>
-A veces me preguntan qué cambió desde que llegaste a mi vida, y la respuesta es bien sencilla: cambió la forma en la que veo los días.<br><br>
-Antes un día bonito era simplemente un buen día.<br><br>
-Ahora un día bonito es aquel en el que estás tú.<br></p>
-        <button class="next-button">Continuar ➔</button>
+
+    <!-- ================= PASO 1: FOTO 1 ================= -->
+    <section class="step-hidden" id="paso-1">
+        <div class="photo-container">
+            <img src="assents/photos/portada.jpeg" alt="Foto 1" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>El destino ya sabía qué estaríamos juntos❤️</span></div>
+    </section>
+
+    <!-- ================= PASO 2: TEXTO 1 ================= -->
+    <section class="step-hidden text-container" id="paso-2">
+        <div class="text-wrapper">
+            <h2>Parte 1</h2>
+            <p>Hoy es el Día de la Novia, pero mientras escribo esto me doy cuenta de algo bien curioso... si existiera un día para agradecerle a la vida por la persona que puso en mi camino, también sería hoy.<br><br>
+            Porque hablar de ti nunca se me hace difícil, lo difícil es encontrar palabras que le hagan justicia a todo lo que significas para mí.<br>
+            A veces me preguntan qué cambió desde que llegaste a mi vida, y la respuesta es bien sencilla: cambió la forma en la que veo los días.<br><br>
+            Antes un día bonito era simplemente un buen día.<br><br>
+            Ahora un día bonito es aquel en el que estás tú.<br></p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 3: FOTO 2 ================= -->
+    <section class="step-hidden" id="paso-3">
+        <div class="photo-container">
+            <img src="assents/photos/foto1.jpeg" alt="Foto 2" class="polaroid-photo"></div>
+         <div class="photo-text">
+            <span>Mi pensamiento favorito 24/7✨</span></div>
+    </section>
+
+    <!-- ================= PASO 4: TEXTO 2 ================= -->
+    <section class="step-hidden text-container" id="paso-4">
+        <div class="text-wrapper">
+            <h2>Parte 2</h2>
+            <p>Y es raro... porque no hiciste magia, no llegaste prometiendo cambiar mi mundo ni buscaste convertirte en alguien indispensable. Simplemente fuiste tú. Con tu manera de reírte, con tu forma de abrazar, con esa paciencia tan tuya, con ese corazón enorme que tienes y con todos esos detalles que quizá tú ves como algo normal, pero que para mí significan muchísimo.<br><br>
+            Hay algo que me encanta de nosotros.<br><br>
+            No siento que tenga que impresionarte para que me quieras.<br>
+            No siento que deba esconder mis miedos o fingir que siempre estoy bien.<br><br>
+            Contigo puedo ser exactamente quien soy, con mis momentos buenos, con mis días pesados, con mis tonterías, con mis sueños, con mis inseguridades... y aun así me haces sentir suficiente.<br><br>
+            Y créeme que encontrar un lugar donde uno puede descansar el corazón no pasa todos los días.<br></p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 5: FOTO 3 ================= -->
+    <section class="step-hidden" id="paso-5">
+        <div class="photo-container">
+            <img src="assents/photos/foto5.jpeg" alt="Foto 3" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>Mi lugar favorito, siempre va a ser contigo🥰</span></div>
+    </section>
+
+    <!-- ================= PASO 6: TEXTO 3 ================= -->
+    <section class="step-hidden text-container" id="paso-6">
+        <div class="text-wrapper">
+            <h2>Parte 3</h2>
+            <p>Gracias por quererme de esa forma.<br>
+            Gracias por escuchar hasta las cosas que parecen insignificantes.<br>
+            Gracias por hacerme sentir importante con acciones tan pequeñas que seguramente ni notas.<br>
+            Gracias por convertir los momentos simples en recuerdos que quiero guardar para siempre.<br>
+            No sé si alguna vez te has dado cuenta, pero ya eres parte de muchas versiones de mí.<br>
+            Estás cuando escucho una canción y automáticamente pienso: "esta le gustaría".<br>
+            Estás cuando me pasa algo bueno y eres la primera persona a la que quiero contárselo.<br>
+            Estás cuando algo sale mal y, sin decirme una sola palabra, el simple hecho de pensar en ti hace que todo pese un poquito menos.<br>
+            Y eso... eso ya no es una casualidad.<br>
+            Eso es hogar.<br></p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 7: FOTO 4 ================= -->
+    <section class="step-hidden" id="paso-7">
+        <div class="photo-container">
+            <img src="assents/photos/foto7.jpeg" alt="Foto 4" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>Te ves hermosa, hasta cuando te da pena 🙈 </span></div>
+    </section>
+
+    <!-- ================= PASO 8: TEXTO 4 ================= -->
+    <section class="step-hidden text-container" id="paso-8">
+        <div class="text-wrapper">
+            <h2>Parte 4</h2>
+            <p>Si alguien me preguntara cuál ha sido una de las mejores cosas que me han pasado, no tendría que pensarlo mucho.<br>
+            Diría tu nombre.<br>
+            Porque contigo entendí que el amor no siempre hace ruido.<br>
+            A veces llega despacito.<br>
+            Se mete entre las conversaciones de madrugada.<br>
+            Entre las risas por cosas sin sentido.<br>
+            Entre los "¿ya comiste?" y los "avísame cuando llegues".<br>
+            Entre abrazos que duran unos segundos, pero que se quedan todo el día.<br>
+            Y cuando menos te das cuenta... ya no puedes imaginar tu vida sin esa persona.<br>
+            Eso me pasó contigo.<br></p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 9: FOTO 5 ================= -->
+    <section class="step-hidden" id="paso-9">
+        <div class="photo-container">
+            <img src="assents/photos/foto8.jpeg" alt="Foto 5" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>Que ojos y que sonrisa, la verdad 😻</span></div>
+    </section>
+
+    <!-- ================= PASO 10: TEXTO 5 ================= -->
+    <section class="step-hidden text-container" id="paso-10">
+        <div class="text-wrapper">
+            <h2>Parte 5</h2>
+            <p>No sé qué hiciste para convertirte en mi lugar favorito, pero gracias por hacerlo.<br>
+            También quiero que sepas algo.<br>
+            No solo te amo por todo lo que eres hoy.<br>
+            También amo la persona en la que te estás convirtiendo.<br>
+            Me emociona verte crecer, cumplir metas, perseguir tus sueños, descubrir nuevas versiones de ti.<br>
+            Y si algún día dudas de ti misma, quiero ser esa voz que te recuerde todo lo que vales.<br>
+            Quiero aplaudir cada logro como si fuera mío.<br>
+            Quiero sostener tu mano cuando las cosas no salgan como esperabas.<br>
+            Quiero celebrar contigo los días felices y quedarme abrazándote en los difíciles.<br>
+            Because amarte también significa elegir quedarme cuando la vida no sea perfecta.<br>
+            Y esa es una decisión que tomaría una y mil veces.</p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 11: FOTO 6 ================= -->
+    <section class="step-hidden" id="paso-11">
+        <div class="photo-container">
+            <img src="assents/photos/foto6.jpeg" alt="Foto 6" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>A tu lado todo es paz ❣️</span></div>
+    </section>
+
+    <!-- ================= PASO 12: TEXTO 6 ================= -->
+    <section class="step-hidden text-container" id="paso-12">
+        <div class="text-wrapper">
+            <h2>Parte 6</h2>
+            <p>Mi amor...<br>
+            No sé qué nos espera dentro de un año, dentro de cinco o dentro de diez.<br>
+            No puedo prometer que todos los días serán fáciles.<br>
+            Pero sí puedo prometerte algo mucho más importante.<br>
+            Mientras esté conmigo la oportunidad de hacerlo, nunca voy a dejar de elegirte.<br>
+            Voy a seguir enamorándome de ti en cada etapa.<br>
+            Voy a seguir aprendiendo quién eres.<br>
+            Voy a seguir buscando maneras de hacerte sonreír.<br>
+            Voy a seguir cuidando este "nosotros" como el regalo tan bonito que es.<br>
+            Porque tú nunca has sido una costumbre para mí.<br>
+            Sigues siendo esa persona que logra acelerarme el corazón cuando aparece una notificación tuya.<br>
+            Sigues siendo la mujer que hace que el tiempo se pase volando cuando estamos juntos.<br>
+            Sigues siendo la razón por la que muchas veces sonrío sin darme cuenta.<br>
+            Y, sinceramente...<br>
+            Espero que nunca dejes de serlo.</p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 13: FOTO 7 ================= -->
+    <section class="step-hidden" id="paso-13">
+        <div class="photo-container">
+            <img src="assents/photos/foto9.jpeg" alt="Foto 7" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>Tus gestos son mi debilidad 🥹</span></div>
+    </section>
+
+    <!-- ================= PASO 14: TEXTO 7 ================= -->
+    <section class="step-hidden text-container" id="paso-14">
+        <div class="text-wrapper">
+            <h2>Parte 7</h2>
+            <p>Hoy es el Día de la Novia.<br>
+            Pero para mí también es el día perfecto para recordarte que, entre todas las coincidencias que pudieron existir en esta vida...<br>
+            Mi favorita siempre va a ser haberte encontrado.<br>
+            Gracias por cada abrazo.<br>
+            Gracias por cada risa.<br>
+            Gracias por cada "te amo".<br>
+            Y, sobre todo...<br>
+            Gracias por permitirme formar parte de tu vida.<br>
+            Ojalá nunca olvides que hay alguien que todos los días se siente inmensamente afortunado de poder llamarte "mi amor".</p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 15: FOTO 8 ================= -->
+    <section class="step-hidden" id="paso-15">
+        <div class="photo-container">
+            <img src="assents/photos/mini nat.jpeg" alt="Foto 8" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>Tan bonita desde chiquita 💞</span></div>
+    </section>
+
+    <!-- ================= PASO 16: TEXTO 8 ================= -->
+    <section class="step-hidden text-container" id="paso-16">
+        <div class="text-wrapper">
+            <h2>Parte 8</h2>
+            <p>Feliz Día de la Novia, mi vidaaaaa.<br>
+            Te amo con todo lo que soy, con todo lo que he sido y con todo lo que algún día voy a ser.<br>
+            Y si volviera a empezar mi vida desde cero...<br>
+            Volvería a buscarte.<br>
+            Porque entre millones de personas...<br>
+            Siempre volvería a elegirte a ti. ❤️</p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 17: FOTO 9 ================= -->
+    <section class="step-hidden" id="paso-17">
+        <div class="photo-container">
+            <img src="assents/photos/foto3.jpeg" alt="Foto 9" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>Me encantas ❤️</span></div>
+    </section>
+
+    <!-- ================= PASO 18: TEXTO 9 ================= -->
+    <section class="step-hidden text-container" id="paso-18">
+        <div class="text-wrapper">
+            <h2>Parte 9</h2>
+            <p>Posdata.<br><br>
+            Ojalá dentro de muchos años podamos volver a leer esta carta juntos y sonreír porque todo lo que soñábamos aquí... lo terminamos viviendo.<br><br>
+            Con todo mi corazón, Natalia ❤️<br><br></p>
+            <button class="next-button">Continuar ➔</button>
+        </div>
+    </section>
+
+    <!-- ================= PASO 19: FOTO 10 ================= -->
+    <section class="step-hidden" id="paso-19">
+        <div class="photo-container">
+            <img src="assents/photos/foto4.jpeg" alt="Foto 10" class="polaroid-photo"></div>
+        <div class="photo-text">
+            <span>De esta carita no me voy a cansar✨</span></div>
+    </section>
+
+   <!-- Sección de la pregunta final corregida -->
+    <div id="paso-20" class="step-section" style="display: none; flex-direction: column; align-items: center;">
+        <p class="pregunta">¿Pero si eres mi novia? 🥺</p>
+            <div class="botones-finales">
+                <button id="btn-si-broma" class="final-btn si">Sí, obvio ❤️</button>
+                <button id="btn-no-broma" class="final-btn no">No 💔</button>
+             </div>
     </div>
-</section>
-<!-- ================= PASO 3: FOTO 2 ================= -->
-<section class="step-hidden photo-container" id="paso-3">
-    <div class="photo-wrapper">
-        <img src="assents/photos/foto1.jpeg" alt="Foto 2" class="polaroid-photo">
-        <div class="photo-text"><span>Mi pensamiento favorito 24/7✨</span></div>
-    </div>
-</section>
-<!-- ================= PASO 4: TEXTO 2 ================= -->
-<section class="step-hidden text-container" id="paso-4">
-    <div class="text-wrapper">
-        <h2>Parte 2</h2>
-        <p>Y es raro... porque no hiciste magia, no llegaste prometiendo cambiar mi mundo ni buscaste convertirte en alguien indispensable. Simplemente fuiste tú. Con tu manera de reírte, con tu forma de abrazar, con esa paciencia tan tuya, con ese corazón enorme que tienes y con todos esos detalles que quizá tú ves como algo normal, pero que para mí significan muchísimo.<br><br>
-Hay algo que me encanta de nosotros.<br><br>
-No siento que tenga que impresionarte para que me quieras.<br>
-No siento que deba esconder mis miedos o fingir que siempre estoy bien.<br><br>
-Contigo puedo ser exactamente quien soy, con mis momentos buenos, con mis días pesados, con mis tonterías, con mis sueños, con mis inseguridades... y aun así me haces sentir suficiente.<br><br>
-Y créeme que encontrar un lugar donde uno puede descansar el corazón no pasa todos los días.<br>
-</p>
-        <button class="next-button">Continuar ➔</button>
-    </div>
-</section>
-<!-- ================= PASO 5: FOTO 3 ================= -->
-<section class="step-hidden photo-container" id="paso-5">
-    <div class="photo-wrapper">
-        <img src="assents/photos/foto5.jpeg" alt="Foto 3" class="polaroid-photo">
-        <div class="photo-text"><span>Mi lugar favorito, siempre va a ser contigo🥰</span></div>
-    </div>
-</section>
-<!-- ================= PASO 6: TEXTO 3 ================= -->
-<section class="step-hidden text-container" id="paso-6">
-    <div class="text-wrapper">
-        <h2>Parte 3</h2>
-        <p>Gracias por quererme de esa forma.<br>
-Gracias por escuchar hasta las cosas que parecen insignificantes.<br>
-Gracias por hacerme sentir importante con acciones tan pequeñas que seguramente ni notas.<br>
-Gracias por convertir los momentos simples en recuerdos que quiero guardar para siempre.<br>
-No sé si alguna vez te has dado cuenta, pero ya eres parte de muchas versiones de mí.<br>
-Estás cuando escucho una canción y automáticamente pienso: "esta le gustaría".<br>
-Estás cuando me pasa algo bueno y eres la primera persona a la que quiero contárselo.<br>
-Estás cuando algo sale mal y, sin decirme una sola palabra, el simple hecho de pensar en ti hace que todo pese un poquito menos.<br>
-Y eso... eso ya no es una casualidad.<br>
-Eso es hogar.<br>
-  </p>
-        <button class="next-button">Continuar ➔</button>
-    </div>
-</section>
-<!-- ================= PASO 7: FOTO 4 ================= -->
-<section class="step-hidden photo-container" id="paso-7">
-    <div class="photo-wrapper">
-        <img src="assents/photos/foto7.jpeg" alt="Foto 4" class="polaroid-photo">
-        <div class="photo-text"><span>Te ves hermosa, hasta cuando te da pena 🙈 </span></div>
-    </div>
-</section>
-<!-- ================= PASO 8: TEXTO 4 ================= -->
-<section class="step-hidden text-container" id="paso-8">
-    <div class="text-wrapper">
-        <h2>Parte 4</h2>
-        <p> Si alguien me preguntara cuál ha sido una de las mejores cosas que me han pasado, no tendría que pensarlo mucho.<br>
-Diría tu nombre.<br>
-Porque contigo entendí que el amor no siempre hace ruido.<br>
-A veces llega despacito.<br>
-Se mete entre las conversaciones de madrugada.<br>
-Entre las risas por cosas sin sentido.<br>
-Entre los "¿ya comiste?" y los "avísame cuando llegues".<br>
-Entre abrazos que duran unos segundos, pero que se quedan todo el día.<br>
-Y cuando menos te das cuenta... ya no puedes imaginar tu vida sin esa persona.<br>
-Eso me pasó contigo.<br> </p>
-        <button class="next-button">Continuar ➔</button>
-    </div>
-</section>
-<!-- ================= PASO 9: FOTO 5 ================= -->
-<section class="step-hidden photo-container" id="paso-9">
-    <div class="photo-wrapper">
-        <img src="assents/photos/foto8.jpeg" alt="Foto 5" class="polaroid-photo">
-        <div class="photo-text"><span>Que ojos y que sonrisa, la verdad 😻</span></div>
-    </div>
-</section>
-<!-- ================= PASO 10: TEXTO 5 ================= -->
-<section class="step-hidden text-container" id="paso-10">
-    <div class="text-wrapper">
-        <h2>Parte 5</h2>
-        <p> No sé qué hiciste para convertirte en mi lugar favorito, pero gracias por hacerlo.<br>
-También quiero que sepas algo.<br>
-No solo te amo por todo lo que eres hoy.<br>
-También amo la persona en la que te estás convirtiendo.<br>
-Me emociona verte crecer, cumplir metas, perseguir tus sueños, descubrir nuevas versiones de ti.<br>
-Y si algún día dudas de ti misma, quiero ser esa voz que te recuerde todo lo que vales.<br>
-Quiero aplaudir cada logro como si fuera mío.<br>
-Quiero sostener tu mano cuando las cosas no salgan como esperabas.<br>
-Quiero celebrar contigo los días felices y quedarme abrazándote en los difíciles.<br>
-Porque amarte también significa elegir quedarme cuando la vida no sea perfecta.<br>
-Y esa es una decisión que tomaría una y mil veces.</p>
-        <button class="next-button">Continuar ➔</button>
-    </div>
-</section>
-<!-- ================= PASO 11: FOTO 6 ================= -->
-<section class="step-hidden photo-container" id="paso-11">
-    <div class="photo-wrapper">
-        <img src="assents/photos/foto6.jpeg" alt="Foto 6" class="polaroid-photo">
-        <div class="photo-text"><span>A tu lado todo es paz ❣️</span></div>
-    </div>
-</section>
-<!-- ================= PASO 12: TEXTO 6 ================= -->
-<section class="step-hidden text-container" id="paso-12">
-    <div class="text-wrapper">
-        <h2>Parte 6</h2>
-        <p>Mi amor...<br>
-No sé qué nos espera dentro de un año, dentro de cinco o dentro de diez.<br>
-No puedo prometer que todos los días serán fáciles.<br>
-Pero sí puedo prometerte algo mucho más importante.<br>
-Mientras esté conmigo la oportunidad de hacerlo, nunca voy a dejar de elegirte.<br>
-Voy a seguir enamorándome de ti en cada etapa.<br>
-Voy a seguir aprendiendo quién eres.<br>
-Voy a seguir buscando maneras de hacerte sonreír.<br>
-Voy a seguir cuidando este "nosotros" como el regalo tan bonito que es.<br>
-Porque tú nunca has sido una costumbre para mí.<br>
-Sigues siendo esa persona que logra acelerarme el corazón cuando aparece una notificación tuya.<br>
-Sigues siendo la mujer que hace que el tiempo se pase volando cuando estamos juntos.<br>
-Sigues siendo la razón por la que muchas veces sonrío sin darme cuenta.<br>
-Y, sinceramente...<br>
-Espero que nunca dejes de serlo.</p>
-        <button class="next-button">Continuar ➔</button>
-    </div>
-</section>
-<!-- ================= PASO 13: FOTO 7 ================= -->
-<section class="step-hidden photo-container" id="paso-13">
-    <div class="photo-wrapper">
-        <img src="assents/photos/foto9.jpeg" alt="Foto 7" class="polaroid-photo">
-        <div class="photo-text"><span>Tus gestos son mi debilidad 🥹</span></div>
-    </div>
-</section>
-<!-- ================= PASO 14: TEXTO 7 ================= -->
-<section class="step-hidden text-container" id="paso-14">
-    <div class="text-wrapper">
-        <h2>Parte 7</h2>
-        <p>Hoy es el Día de la Novia.<br>
-Pero para mí también es el día perfecto para recordarte que, entre todas las coincidencias que pudieron existir en esta vida...<br>
-Mi favorita siempre va a ser haberte encontrado.<br>
-Gracias por cada abrazo.<br>
-Gracias por cada risa.<br>
-Gracias por cada "te amo".<br>
-Y, sobre todo...<br>
-Gracias por permitirme formar parte de tu vida.<br>
-Ojalá nunca olvides que hay alguien que todos los días se siente inmensamente afortunado de poder llamarte "mi amor".</p>
-        <button class="next-button">Continuar ➔</button>
-    </div>
-</section>
-<!-- ================= PASO 15: FOTO 8 ================= -->
-<section class="step-hidden photo-container" id="paso-15">
-    <div class="photo-wrapper">
-        <img src="assents/photos/mini nat.jpeg" alt="Foto 8" class="polaroid-photo">
-        <div class="photo-text"><span>Tan bonita desde chiquita 💞</span></div>
-    </div>
-</section>
-<!-- ================= PASO 16: TEXTO 8 ================= -->
-<section class="step-hidden text-container" id="paso-16">
-    <div class="text-wrapper">
-        <h2>Parte 8</h2>
-        <p>Feliz Día de la Novia, mi vidaaaaa.<br>
-Te amo con todo lo que soy, con todo lo que he sido y con todo lo que algún día voy a ser.<br>
-Y si volviera a empezar mi vida desde cero...<br>
-Volvería a buscarte.<br>
-Porque entre millones de personas...<br>
-Siempre volvería a elegirte a ti. ❤️</p>
-        <button class="next-button">Continuar ➔</button>
-    </div>
-</section>
-<!-- ================= PASO 17: FOTO 9 ================= -->
-<section class="step-hidden photo-container" id="paso-17">
-    <div class="photo-wrapper">
-        <img src="assents/photos/foto3.jpeg" alt="Foto 9" class="polaroid-photo">
-        <div class="photo-text"><span>Me encantas ❤️</span></div>
-    </div>
-</section>
-<!-- ================= PASO 18: TEXTO 9 ================= -->
-<section class="step-hidden text-container" id="paso-18">
-    <div class="text-wrapper">
-        <h2>Parte 9</h2>
-        <p>Posdata.<br><br>
-Ojalá dentro de muchos años podamos volver a leer esta carta juntos y sonreír porque todo lo que soñábamos aquí... lo terminamos viviendo.<br><br>
-Con todo mi corazón, Natalia ❤️<br><br></p>
-        <button class="next-button">Continuar ➔</button>
-    </div>
-</section>
-<!-- ================= PASO 19: FOTO 10 ================= -->
-<section class="step-hidden photo-container" id="paso-19">
-    <div class="photo-wrapper">
-        <img src="assents/photos/foto4.jpeg" alt="Foto 10" class="polaroid-photo">
-        <div class="photo-text"><span>De esta carita no me voy a cansar✨</span></div>
-    </div>
-</section>
-<!-- ==================== PASO 20: LA BROMA FINAL ==================== -->
-<section class="step-hidden" id="paso-20" style="text-align: center; padding: 40px 20px;">
-    <h3>¿Pero si eres mi novia? 👀</h3>
-    <div style="margin-top: 20px;">
-        <button id="btn-si-broma" style="background-color: #ff4d79; color: white; border: none; padding: 12px 25px; margin: 10px; border-radius: 20px; cursor: pointer; font-size: 16px;">Sí, obvio ❤️</button>
-        <button id="btn-no-broma" style="background-color: #555; color: white; border: none; padding: 12px 25px; margin: 10px; border-radius: 20px; cursor: pointer; font-size: 16px;">No 💔</button>
-    </div>
-</section>
-<script src="script.js"></script>
-<audio id="bg-music" src="assents/photos/music/Zoé - Arrullo De Estrellas (Official Video).mp3" loop></audio>
+
+    <script src="script.js"></script>
+    <audio id="bg-music" src="assents/photos/music/Zoé - Arrullo De Estrellas (Official Video).mp3" loop></audio>
 </body>
 </html>

@@ -1,120 +1,106 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-background:#050505;
-color:white;
-font-family:"Poppins",sans-serif;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;
-transition: 1.2s;
+
+body {
+    background: #050505;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 1.2s;
 }
-.intro{
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-text-align:center;
-gap:25px;
-padding:40px;
+
+/* Portada de Introducción */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    padding: 40px;
+    width: 100%;
+    height: 100vh;
 }
-.title{
-font-family:"Cormorant Garamond",serif;
-font-size:4rem;
-font-weight:600;
-opacity:0;
-animation:fade 2s forwards;
+
+.title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: fade 2s forwards;
 }
-.subtitle{
-font-size:1.1rem;
-max-width:650px;
-opacity:0;
-animation:fade 2s forwards;
+
+.subtitle {
+    font-size: 1.1rem;
+    max-width: 650px;
+    opacity: 0;
+    animation: fade 2s forwards;
 }
-.subtitle:nth-child(2){
-animation-delay:2s;
-}
-.subtitle:nth-child(3){
-animation-delay:4s;
-}
-.subtitle:nth-child(4){
-animation-delay:6s;
-}
+
+.subtitle:nth-child(2) { animation-delay: 2s; }
+.subtitle:nth-child(3) { animation-delay: 4s; }
+.subtitle:nth-child(4) { animation-delay: 6s; }
+
+/* Botones Generales */
 button{
-margin-top:30px;
-padding:15px 40px;
-border:none;
-border-radius:40px;
-font-size:1rem;
-cursor:pointer;
-background:#C97A94;
-color:white;
-opacity:0;
-animation:fade 2s forwards;
-animation-delay:8s;
-transition:.3s;
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #C97A94;
+    color: white;
+    opacity: 0;
+    animation: fade 2s forwards;
+    animation-delay: .5s;
+    transition: 1s;
 }
-button:hover{
+/* 2. Botón de la portada: Este sí se espera a que salgan los subtítulos */
+#startButton {
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #C97A94;
+    color: white;
+    opacity: 0;
+    animation: fade 2s forwards;
+    animation-delay: 8s; /* <--- Solo el botón inicial se espera los 8 segundos */
+    transition: 2s;
+}
+
+button:hover, #startButton:hover {
     transform: scale(1.08);
     box-shadow: 0 0 30px rgba(201,122,148,.45);
     background: #d88aa3;
 }
-@keyframes fade{
-from{
-opacity:0;
-transform:translateY(20px);
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-/* Estilos para el Capítulo 1 */
-.chapter-hidden {
-    display: none; /* Empieza oculto para que no estorbe en la intro */
-    opacity: 0;
-    transition: opacity 1.5s ease;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px;
-}
-.chapter-content h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 3rem;
-    color: #ff758f;
-    margin-bottom: 20px;
-}
-.chapter-content p {
-    font-size: 1.2rem;
-    color: #ccc;
-    max-width: 600px;
-}
-/* --- Contenedor de la foto en pantalla completa --- */
-.photo-container {
-    display: none; /* Empieza oculto */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #0d0d0d; /* Fondo negro para que resalte la foto */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: opacity 1s ease;
-    z-index: 10;
-}
-/* Clase base para ocultar todos los pasos */
+
+/* =========================================================================
+   ESTRUCTURA DE PANTALLAS OCULTAS (PASOS DEL HISTORIAL)
+   ========================================================================= */
 .step-hidden {
-    display: none;
+    display: none; /* Controlado estrictamente por JS */
     position: fixed;
     top: 0;
     left: 0;
@@ -123,90 +109,143 @@ transform:translateY(0);
     background-color: #0d0d0d;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 2s ease;
     z-index: 10;
+    padding: 20px;
 }
-/* Contenedores de Texto */
+
+/* Contenedores específicos de Contenido */
 .text-container {
-    padding: 40px;
     text-align: center;
 }
+
 .text-wrapper {
     max-width: 600px;
     color: white;
+    padding: 20px;
 }
+
 .text-wrapper h2 {
-    font-size: 2.5rem;
-    color: #eb123d; /* O el tono rosa/rojo que estés usando */
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    color: #ff4d6d;
     margin-bottom: 20px;
 }
+
 .text-wrapper p {
     font-size: 1.1rem;
     line-height: 1.8;
+    color: #e0e0e0;
     margin-bottom: 30px;
 }
-/* Botón para pasar al siguiente texto */
+
+/* Botón Siguiente en las secciones */
 .next-button {
-    background-color: #ff4d6d;
-    color: white;
+    background-color: #ff4d6d !important;
+    color: white !important;
     border: none;
-    padding: 12px 30px;
+    padding: 12px 35px;
     font-size: 1rem;
     border-radius: 25px;
     cursor: pointer;
-    transition: transform 0.2s;
-}
-.next-button:hover {
-    transform: scale(1.05);
-}
-/* Contenedores de Foto (Mantén los mismos que ajustamos antes) */
-.photo-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 90%;
-    max-height: 90vh;
-}
-.polaroid-photo {
-    max-width: 100%;
-    max-height: 65vh;
-    object-fit: contain;
-    border: 10px solid white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border-bottom-width: 30px;
-}
-.photo-text span {
-    font-size: 1.5rem;
-    color: white;
+    opacity: 1 !important;
+    animation: none !important;
+    margin-top: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Contenedor de estrellas absoluto para que no mueva tus textos */
+.next-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 77, 109, 0.4);
+}
+/* =========================================================================
+   MARCO BLANCO ADAPTABLE (TEXTO AFUERA)
+   ========================================================================= */
+/* El contenedor ahora se adapta al tamaño real de la foto */
+.photo-container {
+    background: #ffffff;
+    padding: 10px;               /* Grosor del marco blanco alrededor de la foto */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+    border-radius: 4px;
+    transform: rotate(0);  /* El toque inclinado clásico */
+    max-width: 350px;            /* Límite para que no se haga gigante en compu */
+    width: 80%;                  /* Perfecto para pantallas de cel */
+    margin: 10px auto;           /* Centra el marco horizontalmente */
+    display: block;
+}
+
+/* La imagen se muestra completa respetando su proporción original */
+.photo-container img {
+    width: 100%;
+    height: auto;                /* Mágico: calcula el alto automático sin cortar nada */
+    display: block;
+    border-radius: 2px;
+}
+
+/* El texto de abajo flotando en el fondo oscuro */
+.photo-text {
+    width: 100%;
+    margin-top: 20px;            /* Separación con el marco blanco */
+    text-align: center;
+}
+
+.photo-text span {
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive; /* <--- Fuente estilo manuscrita */
+    font-size: 22px;          /* Estas fuentes suelen ser pequeñas, con 22px se lee perfecto */
+    font-weight: 600;
+    display: inline-block;
+    line-height: 1.4;
+}
+/* =========================================================================
+   ELEMENTOS ADICIONALES (ESTRELLAS Y CORAZONES)
+   ========================================================================= */
 .stars-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Para que no estorbe si le das clic a la pantalla */
-  overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
 }
-/* Estilo base de cada estrellita */
+
 .star {
-  position: absolute;
-  color: rgba(255, 255, 255, 0.6); /* Color blanco con transparencia elegante */
-  font-size: 14px; /* Tamaño discreto */
-  animation: pulse 3s infinite ease-in-out;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    animation: pulse 3s infinite ease-in-out;
 }
-/* Animación de parpadeo (brillo) */
+
 @keyframes pulse {
-  0%, 100% {
-    opacity: 0.2;
-    transform: scale(0.8);
-  }
-  50% {
-    opacity: 0.9;
-    transform: scale(1.2);
-  }
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.2);
+    }
+}
+
+/* Corazones Flotantes */
+.heart-floating {
+    position: fixed;
+    z-index: 10000;
+    pointer-events: none;
+    font-size: 35px;
+    animation: floatUp 1.2s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.5) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-130px) scale(1.6) rotate(var(--rotar, 15deg));
+        opacity: 0;
+    }
 }
