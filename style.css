@@ -93,20 +93,26 @@ button:hover, #startButton:hover {
    ESTRUCTURA DE PANTALLAS OCULTAS (PASOS DEL HISTORIAL)
    ========================================================================= */
 .step-hidden {
-    display: none; /* Controlado estrictamente por JS */
+    display: none; /* Controlado estrictamente por tu JS para ocultarlo al inicio */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     background-color: #0d0d0d;
+    
+    /* Habilita scroll vertical sutil si el texto o la foto son muy grandes */
+    overflow-y: auto; 
+    
+    /* Centrado interno */
     justify-content: center;
     align-items: center;
     flex-direction: column;
     opacity: 0;
     transition: opacity 2s ease;
     z-index: 10;
-    padding: 20px;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 /* Contenedores específicos de Contenido */
 .text-container {
@@ -127,7 +133,7 @@ button:hover, #startButton:hover {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #e0e0e0;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 /* Botón Siguiente en las secciones */
 .next-button {
